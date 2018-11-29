@@ -70,3 +70,5 @@ body {
 .pin-bottom, .pin-bottomleft, .pin-bottomright, .pin-left, .pin-right, .pin-top, .pin-topleft, .pin-topright {
     position: absolute;
 }
+
+.ReactCodeMirror,.ReactCodeMirror>.CodeMirror { height: 100%; }

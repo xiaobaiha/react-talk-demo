@@ -27,21 +27,12 @@ class Demo extends React.Component {
         const Welcome = component;
         ReactDOM.render(<Welcome />, document.getElementById('codeView'));
     }
-
-    // updateCode = newCode => {
-    //     console.log({newCode}, eval(newCode))
-    //     this.setState({code: newCode});
-    //     this.viewRender(newCode);
-    // }
-    componentWillUnmount(){
-        // document.getElementById('codeView').innerHTML = '';
-    }
     
     render() {
         return (
-            <div className="flex">
-                <div id="codeView" style={{width: '50%'}}></div>
-                <div id="codeEditor" style={{width: '50%'}}>
+            <div className="flex row-full">
+                <div id="codeView" style={{width: '50%', height: '100%'}}></div>
+                <div id="codeEditor" style={{width: '50%', height: '100%'}}>
                     <CodeMirror 
                         value={this.state.code}
                         />
