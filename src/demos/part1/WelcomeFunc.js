@@ -1,5 +1,9 @@
 import React from 'react';
+import Demo from '../';
+import {Welcome, Template} from './FunctionTemplate';
 
-export function WelcomeFunc(props) {
-    return <h1>Hello, function!</h1>;
+export class WelcomeFunc extends React.Component {
+    render() {
+      return <Demo code={Template} mode="javascript" component={Welcome}/>;
+    }
 }

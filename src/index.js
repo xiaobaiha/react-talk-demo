@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import './asserts/css/base.css'
-
+import 'codemirror/lib/codemirror.css';
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 import indexRoutes from './routes';
